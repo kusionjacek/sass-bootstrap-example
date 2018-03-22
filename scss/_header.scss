@@ -1,0 +1,48 @@
+#main-header{
+    background-image: linear-gradient(to bottom, $linear-gradient,$linear-gradient), url(../img/header/pictures_on_the_wall.jpg); 
+    @include background-set; 
+    height: 100vh;
+    @include flex-center;
+    color: $text-color;
+    .header-caption{
+    @include flex-center;
+    flex-direction: column;
+        h2{
+    font-size: 3em;
+    font-family: $Droid;
+}    h1{
+    font-size: 4em;
+    font-family: $Montserrat;
+}.view-more{
+    background-color: $base-background;
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color;
+    padding: 15px 30px;
+    border: 1px solid $base-background;
+    transition: all 0.5s;
+    &:hover{
+    @include hover-color;
+}
+}
+    }}
+
+#services .fas{
+    font-size: 3em;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    background-color: $base-background;
+    border:1px solid $base-background;
+    color: $text-color;
+    transition: all 0.3s;
+    border-radius: 50%;
+    &:hover{
+    @include hover-color;
+    transform: rotate(180deg)
+    
+}
+}
+
+img{
+    @include image;
+}

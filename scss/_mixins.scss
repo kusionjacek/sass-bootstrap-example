@@ -1,0 +1,26 @@
+@mixin progress-bar{
+    position: fixed;
+    width: 0x;
+    height: 20px;
+    background-color: red;
+    top: 0;
+    z-index: 2000;
+}
+@mixin image{
+    border-radius: 50%;
+    width: 100%;
+}
+@mixin background-set{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@mixin hover-color{
+    color: $base-background;
+    background-color: $text-color;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

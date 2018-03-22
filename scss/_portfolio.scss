@@ -1,0 +1,79 @@
+#portfolio {
+    background-color: $portfolio-color;
+    figure {
+        background-color: $text-color;
+        .portfolio-image {
+            overflow: hidden;
+            .portfolio-image-bg {
+                height: 300px;
+                @include background-set;
+                transition: all 0.5s;
+                &:hover .portfolio-bg-mask {
+                    opacity: 1;
+                }
+                &:hover {
+                    transform: scale(1.2)
+                }
+                .portfolio-bg-mask {
+                    background-color: $mask-color;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    @include flex-center;
+                    font-size: 2em;
+                    color: white;
+                    transition: all 0.4s;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+#portfolio-img-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg)
+}
+
+#portfolio-img-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg)
+}
+
+#portfolio-img-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg)
+}
+
+#portfolio-img-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg)
+}
+
+#portfolio-img-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg)
+}
+
+#portfolio-img-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg)
+}
+
+.fab {
+    font-size: 1.5em;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid $text-color;
+    background-color: $dark-color;
+    color: $text-color;
+    border-radius: 50%;
+    transition: all 0.5s;
+    margin: 0 10px;
+    &:hover {
+    background-color: $base-background;
+}
+}
+
+
+
+#team .team-description {
+    margin-top: 30px;
+}

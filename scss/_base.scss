@@ -1,0 +1,24 @@
+body{
+    color: $body-color;
+    font-family: $Roboto;
+    
+}
+section{
+    padding: 60px 0;
+    .section-header{
+    margin-bottom: 70px;
+    width: 100%;
+    text-align: center;
+    h2{
+    font-family: $Montserrat;
+    color: $dark-color;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+    }
+}
+#progressbar{
+@include progress-bar;
+    
+}

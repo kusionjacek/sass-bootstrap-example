@@ -1,0 +1,55 @@
+#contact{
+    background-image: linear-gradient(to bottom, $gradient-1, $gradient-2),url(../img/footer/world-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $text-color;
+    width: 100%;
+    .row{
+    @include flex-center;
+        .form-column{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+            textarea{
+    height: 100%;
+}    input, textarea{
+    text-transform: uppercase;
+    padding: 15px;    
+    border-radius: 5px;    
+    font-family: $Montserrat;
+    
+}   
+}
+}
+}
+
+
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    .fab{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+}
+
+#contact input[type="submit"]{
+    background-color: $base-background;
+    border: 1px solid $base-background;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    transition:all 0.3s;
+    &:hover{
+    background-color: white;
+    color: $base-background;
+}
+    
+}
+
